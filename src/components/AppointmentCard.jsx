@@ -1,6 +1,4 @@
-
-
-export default function AppointmentCard({ title, time, doctor, icon:Icon, color }) {
+export default function AppointmentCard({ title, time, doctor, icon: Icon, color }) {
   return (
     <div className={`${color} rounded-xl p-4`}>
       <div className="flex justify-between items-start">
@@ -10,9 +8,9 @@ export default function AppointmentCard({ title, time, doctor, icon:Icon, color 
           <p className="text-xs text-white/80">Dr. {doctor}</p>
         </div>
         <div className="text-white text-xl">
-          {Icon && <Icon className="h-6 w-6" />} 
-          </div>
+          {Icon && <Icon className="h-6 w-6" />}
+        </div>
       </div>
     </div>
-  )
+  );
 }
